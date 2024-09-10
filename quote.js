@@ -53,7 +53,33 @@ const quotes = {
       author: "Steve Jobs",
     },
   ],
+  movie: [
+    {
+      text: "You either die a hero, or you live long enough to see yourself become the villain.",
+      author: "Harvey Dent",
+    },
+    {
+      text: "It's not who I am underneath, but what I do that defines me.",
+      author: "Batman",
+    },
+    {
+      text: "Oh yes, the past can hurt. But you can either run from it, or learn from it.",
+      author: "Rafiki",
+    },
+    {
+      text: "I'm gonna make him an offer he can't refuse.",
+      author: "Vito Corleone",
+    },
+    {
+      text: "With great power comes great responsibility.",
+      author: "Uncle Ben",
+    },
+    {
+      text: "Why so serious?",
+      author: "The Joker",
+    },
+  ],
 };
 
 // Creating new property 'all' for 'All' selector
-quotes.all = [...quotes.science, ...quotes.motivation];
+quotes.all = [...quotes.science, ...quotes.motivation,...quotes.movie];
