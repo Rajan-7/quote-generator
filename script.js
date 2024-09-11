@@ -69,4 +69,19 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove("dark-mode");
     }
   });
+
+  // Fontsize eventListener
+  increaseFont.addEventListener("click", () => {
+    if (fontSize < 3) {
+      fontSize += 0.1;
+      quoteContainer.style.fontSize = `${fontSize}em`;
+    }
+  });
+
+  decreaseFont.addEventListener("click", () => {
+    if (fontSize > 0.8) {
+      fontSize -= 0.1;
+      quoteContainer.style.fontSize = `${fontSize}em`;
+    }
+  });
 });

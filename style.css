@@ -6,16 +6,20 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary-color:#f4f4f4;
+}
+
 /* Base style */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--primary-color);
   color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./image/quoteBackground.png");
+  background-image: url("./image/lightmode.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -86,7 +90,7 @@ footer {
   margin-top: 20px;
 }
 
-/* Button */
+/* Button style */
 button {
   padding: 5px 10px;
   font-size: 16px;
@@ -100,30 +104,34 @@ button {
   -o-border-radius: 5px;
 }
 
-/* Dark Mode Style */
+/* Dark mode style */
 body.dark-mode {
   background-color: #121212;
-  color: #f4f4f4;
+  color: var(--primary-color);
   background-image: url("./image/darkmode.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
+body.dark-mode header h1 {
+  color: #9999c3;
+}
+
 body.dark-mode .quote-container {
   background-color: #1e1e1e;
-  color: #f4f4f4;
+  color: var(--primary-color);
 }
 
 body.dark-mode button {
   background-color: #333;
-  color: #f4f4f4;
+  color: var(--primary-color);
   border: none;
 }
 
 body.dark-mode #categorySelector {
   background-color: #333;
-  color: #f4f4f4;
+  color: var(--primary-color);
   border: none;
 }
 
@@ -198,6 +206,10 @@ input:checked + .slider:before {
   .control {
     flex-direction: column;
     align-items: center;
+  }
+
+  .slider {
+    background-color: #a9b8b9;
   }
 
   footer {
