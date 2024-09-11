@@ -15,6 +15,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url("./image/quoteBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .container {
@@ -100,6 +104,10 @@ button {
 body.dark-mode {
   background-color: #121212;
   color: #f4f4f4;
+  background-image: url("./image/darkmode.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 body.dark-mode .quote-container {
